@@ -22,3 +22,5 @@ $(document).ready(function(){
         }
     });
 });
+// Copy all the code written above for the navigation bar
+// Navigation bar script ends here
