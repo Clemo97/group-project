@@ -24,8 +24,12 @@ p{
 .card-img-top {
   height:300px ;
 }
+.card-img-top1{
+  height: 350px;
+}
 #h5{
   text-align: center;
+  margin-top: 10px;
 }
 #p{
   font-size: 14px;
