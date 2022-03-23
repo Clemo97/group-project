@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  padding: 40px;
+}
+.container h2 {
+  text-align: center;
+  color: #fea150;
+  margin-bottom: 20px;
+}
+.container img {
+  float: left;
+  margin-right: 100px;
+}
+.container p,
+.method,
+.ingredients {
+  font-size: 13px;
+}
+.container section.dish {
+  margin-bottom: 90px;
+}
+.container section.bhajia {
+  margin-bottom: 150px;
+}
