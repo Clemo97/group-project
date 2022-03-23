@@ -1,2 +1,2 @@
 # group-project
-Week 5 group project
+Week 5 group project.
