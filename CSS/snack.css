@@ -16,8 +16,17 @@ h4,h6{
   color: black;
 }
 ol,ul{
-  font-size: 10px;
+  font-size: 14px;
 }
 p{
   font-size: 12px;
+}
+.card-img-top {
+  height:300px ;
+}
+#h5{
+  text-align: center;
+}
+#p{
+  font-size: 14px;
 }
