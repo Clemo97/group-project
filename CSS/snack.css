@@ -8,8 +8,14 @@ body{
   
 }
 button{
-  display: flex;
-  justify-content: center;
+  font-size: 18px;
+  margin: 2% 50%;
+  height: 45px;
+  width: 120px;
+  border: unset;
+  border-radius: 3px;
+  box-shadow: 1px 1px #F67929;
+  background-color: #F67929;
 }
 h4,h6{
   font-size: 20px;
