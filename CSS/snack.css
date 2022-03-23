@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  display: flex;
+  
+}
+button{
+  display: flex;
+  justify-content: center;
+}
+h4,h6{
+  font-size: 20px;
+  color: black;
+}
+ol,ul{
+  font-size: 10px;
+}
+p{
+  font-size: 12px;
+}
