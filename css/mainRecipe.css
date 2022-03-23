@@ -1,109 +1,15 @@
-/*RECIPE*/
-@import '~mdb-ui-kit/css/mdb.min.css';
-.space{
-  margin-top: 6%;
-  height: 10px;
-  width: 100%;
-}
-
-.title h1{
-  position: absolute;
-  margin-top: 1%;
-  width: 233px;
-  height: 33px;
-  left: 900px;  
-  top: 80px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-  display: flex;
-  letter-spacing: 0.04em;
-  color: #FEA150;
-  margin-bottom: 1em;
-}
-
-.searchBar{
-  margin-top: 1%;
-  left: 200px;  
-  width: 300px;
-  height: 32px;
-  top: 89px;
-  background: rgba(254, 161, 80, 0.21);
-  border-radius: 15px;
-  margin-bottom: 2em;
-}
-
-.main{
-  margin-left: 10%;
-  justify-content: space-between;
-  width: 80%;
-  top: 587px;
+.main 
+{
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 4em;
-  left: 100px;
-  
+  width: 88%;
+  margin-bottom: 2em;
 }
-.main .mealCard{
+.mealCard{
+
   margin-bottom: 3em;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px #FEA150;
   margin-left: 1em;
   margin-right: 1em;
 }
-
-/*END OF RECIPE*/
-/*NAV BAR*/
-.navbar .navbar-nav .nav-link {
-    color: #fea150;
-    font-size: 1.1em;
-}
-.navbar .navbar-brand :hover{color:#333333;}
-.navbar .navbar-nav .nav-link:hover{
-    color: #fea150;
-}
-.nav-item {
-  color: #fea150 !important;
-}
-.sm-icons {
-  flex-direction: row;
-}
-@media only screen and (max-width: 960px) {
-  .sm-icons .nav-item {
-    padding-right: 1em;
-  }
-}
-
-
-body, html {
-  height: 100%;
-  scroll-behavior: smooth;
-}
-
-
-/*FOOTER*/
-.footer{
- 
-    background-color: #000000;
-     width: 100%;
-     height: 50px;
-     text-align: center;
-     vertical-align: middle;
-     overflow: hidden;
-     }
-     .footer h1{
-         line-height: 51px;
-         vertical-align: middle;
-         font-size: medium;
-         color: #FFFFFF !important;
-         font-weight: bold !important;
-     }
-  
-     .footer text{
-         color: #fea150;
-     }
-     .footerSocial{
-        flex-direction: row;
-        }
