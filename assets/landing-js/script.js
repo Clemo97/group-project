@@ -22,13 +22,16 @@ $(document).ready(function(){
         }
     });
 });
-// Copy all the code written above for the navigation bar
 // Navigation bar script ends here
 
 
 // view recipe button hide and show effect
 $(".bg1").mouseover(function(){
     $(".btn1").show();
+    $("#btn1").click(function() {
+        window.location.href = './pages/mainRecipe.html#breakfast'; //Adds click function
+    });
+    
 });
 $(".bg1").mouseleave(function(){
     $(".btn1").hide();
@@ -36,6 +39,10 @@ $(".bg1").mouseleave(function(){
 
 $(".bg2").mouseover(function(){
     $(".btn2").show();
+    $("#btn2").click(function() {
+        window.location.href = './pages/mainRecipe.html#lunch';
+    });
+    
 });
 $(".bg2").mouseleave(function(){
     $(".btn2").hide();
@@ -43,6 +50,9 @@ $(".bg2").mouseleave(function(){
 
 $(".bg3").mouseover(function(){
     $(".btn3").show();
+    $("#btn3").click(function() {
+        window.location.href = './pages/mainRecipe.html#lunch';
+    });
 });
 $(".bg3").mouseleave(function(){
     $(".btn3").hide();
@@ -50,6 +60,10 @@ $(".bg3").mouseleave(function(){
 
 $(".bg4").mouseover(function(){
     $(".btn4").show();
+    $("#btn4").click(function() {
+       
+        window.location.href = './pages/mainRecipe.html#snacks';
+    });
 });
 $(".bg4").mouseleave(function(){
     $(".btn4").hide();
@@ -57,6 +71,9 @@ $(".bg4").mouseleave(function(){
 
 $(".bg5").mouseover(function(){
     $(".btn5").show();
+    $("#btn5").click(function() {
+        window.location.href = './pages/mainRecipe.html#dinner';
+    });
 });
 $(".bg5").mouseleave(function(){
     $(".btn5").hide();
