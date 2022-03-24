@@ -49,3 +49,29 @@
 .container form i{
   padding-left: 10;
 }
+.recipeList{
+  padding: 20px 0;
+}
+.recipe{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.recipe img{
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  padding-bottom: 1em;
+}
+.recipe .rDetail{
+  padding-left: 15px;
+}
+.recipe .rDetail h2{
+  font-size: 11px;
+  color: #333333;
+}
+.recipe .rDetail h3{
+  font-size: 8px;
+  color: #333333;
+}
