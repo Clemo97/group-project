@@ -8,6 +8,9 @@ body{
   
 }
 button{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
   font-size: 18px;
   margin: 2% 50%;
   height: 45px;
