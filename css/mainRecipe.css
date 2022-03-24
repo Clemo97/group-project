@@ -10,6 +10,13 @@
   width: 88%;
   margin-bottom: 2em;
 }
+.rLink{
+  color: #FEA150;
+}
+.rLink :hover{
+  color: #333333 !important;
+  text-decoration: none !important;
+}
 .mealCard{
 
   margin-bottom: 3em;
