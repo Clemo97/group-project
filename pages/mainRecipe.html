@@ -1,365 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swahili Dishes</title>
-    <script src="../assets/landing-js/jquery.js" defer></script>
-    <script src="../js/mainRecipe.js" defer></script>
+    <script src="../assets/landing-js/jquery.js"></script>
+    <script src="../js/mainRecipe.js"></script>
 
     <!-- Font Awesome -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
-    rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
     <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="../assets/landing-css/style.css">
-    <link rel="stylesheet" href="../css/mainRecipe.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="../assets/landing-css/style.css" />
+    <link rel="stylesheet" href="../css/mainRecipe.css" />
+  </head>
+  <body>
     <!--NAV-->
-    
-        <!--END OF NAV-->
+    <!-- Navbar -->
+    <!-- please ensure to copy the above css links for mdbootstrap as well -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-none navlinkc">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
-<!--BODY CODE-->
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img src="../assets/langing-page-images/logo.png" height="20" alt="swahili foods Logo" loading="lazy" />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mr-5 navlinkc" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-5 navlinkc" href="#breakfast">Breakfast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-5 navlinkc" href="#lunch">Lunch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-5 navlinkc" href="#dinner">Dinner</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-5 navlinkc" href="#snacks">Snacks</a>
+            </li>
+            <!-- <li class="nav-item">
+          <a class="nav-link navlinkc" href="#">Order</a>
+        </li> -->
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!--END OF NAV-->
 
-  <div class="title">
-    <h1 class="text-center">RECIPES</h1>
-    <div class=" container searchBar">
+    <!--BODY CODE-->
 
-    </div>
-  </div>
-<div class=" container-fluid main" style="padding-top: 2rem">
-  
-
-   <!--BREAKFAST-->
-   <div class="breakfast" id="breakfast"> 
-    <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">BREAKFAST</h1>
-   <div class="container-fluid" style="padding-top: 1rem;">
-
-    <div class="row">
-      <div class="col-8 col-sm-6 col-lg-3 padding">
-        <div class="card mealCard">
-          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;" />
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-            </a>
+    <div class="mt-5 pt-5 title">
+      <h1 class="text-center">RECIPES</h1>
+      <!--Add a search icon-->
+      <section class="container searchBar">
+        <form>
+          <i class="fas fa-search sIcon ml-3"></i>
+          <input type="text" name="" id="searchItem" placeholder="Search Recipe" onkeyup="search()" />
+        </form>
+        <div class="recipeList">
+          <!--R1-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+              <h3>Breakfast</h3>
+            </div>
           </div>
+          <!--R2-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Mahamri</h2>
+            </div>
+          </div>
+          <!--R3-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>kaimati</h2>
+            </div>
+          </div>
+          <!--R4-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R5-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R6-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R7-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R8-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R9-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R10-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R11-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R12-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R13-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R14-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R15-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R16-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R17-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R18-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R19-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+          <!--R20-->
+          <div class="recipe">
+            <img src="../images/rice and beef.jpg" alt="" />
+            <div class="rDetail">
+              <h2>Rice and Beef</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container-fluid main" style="padding-top: 2rem">
+      <!--BREAKFAST-->
+      <div class="breakfast" id="breakfast">
+        <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700">BREAKFAST</h1>
+        <div class="container-fluid" style="padding-top: 1rem">
+          <div class="row">
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/kaimati.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
 
-          <div class="card-body">
-            <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; " >RECIPE NAME</h5>
-            
-            <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">KAIMATI</h5>
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/kaimati.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/mahamri.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">MAHAMRI</h5>
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/mahamri.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/eggtoast.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">EGG TOAST</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/tosti_mayai.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/uji_shayiri.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">OAT PORRIDGE</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/oat_porridge.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-8 col-sm-6 col-lg-3 padding">
-        <div class="card mealCard">
-          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-            </a>
+
+      <!--LUNCH-->
+
+      <div class="lunch" id="lunch">
+        <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700">LUNCH</h1>
+        <div class="container-fluid" style="padding-top: 1rem">
+          <div class="row">
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/minced.jpeg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">MINCED MEAT</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/minced.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/bhajia.png" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">BHAJIA</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/bhajia.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/biriyani.jpeg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">BIRIYANI</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/biriyani.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/pilau.jpeg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">PILAU</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/pilau.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div class="card-body">
-            <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-            
-            <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
+      <!--DINNER-->
+
+      <div class="dinner" id="dinner">
+        <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700">DINNER</h1>
+        <div class="container-fluid" style="padding-top: 1rem">
+          <div class="row">
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/matoke.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">MATOKE</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../Supper/matoke.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/potato curry.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">POTATO CURRY</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../Supper/potatocurry.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/steak.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">STEAK</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../Supper/steak.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/rice and beef.jpg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">RICE & BEEF</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../Supper/rnb.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-8 col-sm-6 col-lg-3 padding" >
-        <div class="card mealCard">
-          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-            </a>
+
+      <!--SNACKS-->
+      <div class="snacks" id="snacks">
+        <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700">SNACKS</h1>
+        <div class="container-fluid" style="padding-top: 1rem">
+          <div class="row">
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/bhajia.png" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">SHRIMP TACOS</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">VIEW RECIPE</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">RECIPE NAME</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">
+                    <a class="rLink" href="../pages/snack.html">VIEW RECIPE</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/demoImg.jpeg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">RECIPE NAME</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">VIEW RECIPE</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sm-6 col-lg-3 padding">
+              <div class="card mealCard">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="../images/demoImg.jpeg" class="img-fluid cardImg" style="width: 100%" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px">RECIPE NAME</h5>
+
+                  <h4 class="text-center" style="color: #fea150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700">VIEW RECIPE</h4>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="card-body">
-            <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-            
-            <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-8 col-sm-6 col-lg-3 padding">
-        <div class="card mealCard">
-          <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-            <a href="#!">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-            </a>
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-            
-            <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    <!--end of body-->
 
-<!--LUNCH-->
+    <!--FOOTER-->
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-<div class="lunch" id="lunch"> 
-  <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">LUNCH</h1>
- <div class="container-fluid" style="padding-top: 1rem;">
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
-  <div class="row">
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
+          <!-- Google -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; " >RECIPE NAME</h5>
-         
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
       </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
+      <!-- Grid container -->
 
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0), 0.4">
+        © 2022 Copyright:
+        <a class="text-dark" href="../index.html">Swahili Foods</a>
       </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding" >
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-         
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-         
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!--DINNER-->
-
-<div class="dinner" id="dinner"> 
-  <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">DINNER</h1>
- <div class="container-fluid" style="padding-top: 1rem;">
-
-  <div class="row">
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; " >RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-         
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding" >
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!--SNACKS-->
-<div class="snacks" id="snacks"> 
-  <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">SNACKS</h1>
- <div class="container-fluid" style="padding-top: 1rem;">
-
-  <div class="row">
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; " >RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding" >
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-8 col-sm-6 col-lg-3 padding">
-      <div class="card mealCard">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-          </a>
-        </div>
-
-        <div class="card-body">
-          <h5 class="card-title text-center" style="font-weight: normal; color: #333333; font-size: 18px; ">RECIPE NAME</h5>
-          
-          <h4 class="text-center" style="color: #FEA150; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 15px; font-weight: 700;">VIEW RECIPE</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-</div>
-<!--end of body-->
-
-        <!--FOOTER-->
-        
-          
-</body>
- <!-- MDB -->
- <script type="text/javascript" src="js/mdb.min.js"></script>
- <!-- Custom scripts -->
- <script type="text/javascript"></script>
- 
- </html>
+      <!-- Copyright -->
+    </footer>
+  </body>
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</html>
