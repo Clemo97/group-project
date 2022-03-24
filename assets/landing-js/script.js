@@ -68,3 +68,43 @@ $(".bg6").mouseover(function(){
 $(".bg6").mouseleave(function(){
     $(".btn6").hide();
 });
+
+//code for news letter pop up
+$(document).ready(function () {
+  var delay = 300; // milliseconds
+  var cookie_expire = 0; // days
+
+  var cookie = localStorage.getItem("list-builder");
+  if (cookie == undefined || cookie == null) {
+    cookie = 0;
+  }
+
+  if ((new Date().getTime() - cookie) / (1000 * 60 * 60 * 24) > cookie_expire) {
+    $("#list-builder")
+      .delay(delay)
+      .fadeIn("fast", () => {
+        $("#popup-box").fadeIn("fast", () => {});
+      });
+
+    $("button[name=subscribe]").click(() => {
+      $.ajax({
+        type: "POST",
+        url: $("#popup-form").attr("action"),
+        data: $("#popup-form").serialize(),
+        success: (data) => {
+          $("#popup-box-content").html(
+            "<p style='text-align: center'>Thank you for subscribing to Swahili Dishes newsletter!</p>"
+          );
+        },
+      });
+    });
+
+    $("#popup-close").click(() => {
+      $("#list-builder, #popup-box").hide();
+      localStorage.setItem("list-builder", new Date().getTime());
+    });
+  }
+});
+$.post($("#popup-form").attr("action"), { name: $("input[name=name]").val(), email: $("input[name=email]").val(), list: $("input[name=list]").val() }, (result) => {
+    $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to The Polyglot Developer newsletter!</p>");
+});
