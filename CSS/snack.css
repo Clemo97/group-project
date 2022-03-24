@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  display: flex;
+  
+}
+button{
+  font-size: 18px;
+  margin: 2% 50%;
+  height: 45px;
+  width: 120px;
+  border: unset;
+  border-radius: 3px;
+  box-shadow: 1px 1px #F67929;
+  background-color: #F67929;
+}
+h4,h6{
+  font-size: 20px;
+  color: black;
+}
+ol,ul{
+  font-size: 14px;
+}
+ol>li{
+  text-decoration: none;
+  list-style:disc;
+}
+p{
+  font-size: 12px;
+}
+.card-img-top {
+  height:300px ;
+}
+.card-img-top1{
+  height: 350px;
+}
+#h5{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  font-family: fantasy;
+}
+#p{
+  font-size: 14px;
+}
