@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swahili Dishes</title>
-    <script src="../assets/landing-js/jquery.js" defer></script>
-    <script src="../js/mainRecipe.js" defer></script>
+    <script src="../assets/landing-js/jquery.js"></script>
+    <script src="../js/mainRecipe.js" ></script>
 
     <!-- Font Awesome -->
     <link
@@ -32,23 +32,234 @@
 </head>
 <body>
     <!--NAV-->
+     <!-- Navbar -->
+    <!-- please ensure to copy the above css links for mdbootstrap as well -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-none navlinkc">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="../assets/langing-page-images/logo.png"
+          height="20"
+          alt="swahili foods Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link mr-5 navlinkc" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-5 navlinkc" href="#breakfast">Breakfast</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link mr-5 navlinkc" href="#lunch">Lunch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mr-5 navlinkc" href="#dinner">Dinner</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link mr-5 navlinkc" href="#snacks">Snacks</a>
+        </li>
+       <!-- <li class="nav-item">
+          <a class="nav-link navlinkc" href="#">Order</a>
+        </li> -->
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
     
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
         <!--END OF NAV-->
 
 <!--BODY CODE-->
 
-  <div class="title">
+  <div class="mt-5 pt-5 title">
     <h1 class="text-center">RECIPES</h1>
-    <div class=" container searchBar">
+    <!--Add a search icon-->
+    <section class="container searchBar">
+      <form>
+        <i class="fas fa-search sIcon ml-3"></i>
+        <input type="text" name="" id="searchItem" placeholder="Search Recipe" onkeyup="search()">
+      </form>
+      <div class="recipeList">
+        <!--R1-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+            <h3>Breakfast</h3>
+          </div>
+        </div>
+        <!--R2-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Mahamri</h2>
+          </div>
+        </div>
+        <!--R3-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>kaimati</h2>
+          </div>
+        </div>        
+        <!--R4-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R5-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R6-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R7-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R8-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R9-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R10-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R11-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R12-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R13-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R14-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R15-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R16-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R17-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R18-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R19-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+        <!--R20-->
+        <div class="recipe">
+          <img src="../images/rice and beef.jpg" alt="">
+          <div class="rDetail">
+            <h2>Rice and Beef</h2>
+          </div>
+        </div>
+       
 
-    </div>
+
+
+
+      </div>
+
+    </section>
   </div>
 <div class=" container-fluid main" style="padding-top: 2rem">
   
 
    <!--BREAKFAST-->
    <div class="breakfast" id="breakfast"> 
-    <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">BREAKFAST</h1>
+    <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">BREAKFAST</h1>
    <div class="container-fluid" style="padding-top: 1rem;">
 
     <div class="row">
@@ -124,7 +335,7 @@
 <!--LUNCH-->
 
 <div class="lunch" id="lunch"> 
-  <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">LUNCH</h1>
+  <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">LUNCH</h1>
  <div class="container-fluid" style="padding-top: 1rem;">
 
   <div class="row">
@@ -200,14 +411,14 @@
 <!--DINNER-->
 
 <div class="dinner" id="dinner"> 
-  <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">DINNER</h1>
+  <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">DINNER</h1>
  <div class="container-fluid" style="padding-top: 1rem;">
 
   <div class="row">
     <div class="col-8 col-sm-6 col-lg-3 padding">
       <div class="card mealCard">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
+          <img src="../images/matoke.jpg" class="img-fluid" style="width: 100%;"/>
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
           </a>
@@ -223,7 +434,7 @@
     <div class="col-8 col-sm-6 col-lg-3 padding">
       <div class="card mealCard">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
+          <img src="../images/potato curry.jpg" class="img-fluid" style="width: 100%;"/>
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
           </a>
@@ -239,7 +450,7 @@
     <div class="col-8 col-sm-6 col-lg-3 padding" >
       <div class="card mealCard">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
+          <img src="../images/steak.jpg" class="img-fluid" style="width: 100%;"/>
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
           </a>
@@ -256,7 +467,7 @@
     <div class="col-8 col-sm-6 col-lg-3 padding">
       <div class="card mealCard">
         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/demoImg.jpeg" class="img-fluid" style="width: 100%;"/>
+          <img src="../images/rice and beef.jpg" class="img-fluid" style="width: 100%;"/>
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
           </a>
@@ -275,7 +486,7 @@
 
 <!--SNACKS-->
 <div class="snacks" id="snacks"> 
-  <h1 class="text-center" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">SNACKS</h1>
+  <h1 class="text-center mt-5 mb-3" style="color: #333333; font-family: 'Poppins'; letter-spacing: 0.04em; font-size: 18px; font-weight: 700;">SNACKS</h1>
  <div class="container-fluid" style="padding-top: 1rem;">
 
   <div class="row">
