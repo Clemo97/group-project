@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./landing-js/jquery.js"></script>
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./landing-css/style.css">
+    <link rel="stylesheet" href="./landing-css/blog.css">
+    <title>Recipe page</title>
+</head>
+<body class="gradient-custom">
+    
+<!-- Navbar -->
+    <!-- please ensure to copy the above css links for mdbootstrap as well -->
+    <nav class="navbar navbar-expand-lg navbar-light  bg-none navlinkc">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img
+                src="./langing-page-images/logo.png"
+                height="20"
+                alt="swahili foods Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav m-auto  mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="./recipe.html">Recipes</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="#!">Blog</a>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link navlinkc" href="#">Snacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="#">Order</a>
+              </li> -->
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+      
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+      
+            
+            <!-- Avatar -->
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuAvatar"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  class="rounded-circle"
+                  height="25"
+                  alt="Black and White Portrait of a Man"
+                  loading="lazy"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuAvatar"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Logged in as Guest</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Sign up feature coming soon" href="#">Sign up</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Login feature coming in a later build" href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+
+
+<!-- Background image -->
+<!-- <div
+class="p-5 bg-image "
+style="
+  background-image: url('./langing-page-images/heroimage.gif');
+  height: 150px;
+  
+"
+>
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+  <div class="d-flex justify-content-start align-items-start h-100">
+    <div class="row mt-5">
+    <div class="col-md-12 text-white">
+      <h1 class="mb-3 m-md-3 " >Swahili Foods Blog</h1>
+      <p class="mb-3 m-md-3">What's Hot and What's not in the Swahili cooking land. </p>
+      
+    </div>
+    
+    </div>
+  </div>
+</div>
+</div> -->
+<!-- Background image -->
+
+<div class="area">
+<div class="container mt-5">
+    <div class="heading text-center text-white">
+        <h1>Recent Blogs</h1><hr>
+    </div>
+    <div class="row d.flex justify-content-center align-items-center mt-5">
+        <div class="col-md-8">
+            <img class="img-fluid abtimg" src="./langing-page-images/Shouldwomen.jpg" alt="">
+        </div>
+        <div class="col-md-4 text-white">
+            <p>24<sup>th</sup> March 2022</p>
+            <h2>Should Women really cook or should men take the role.</h2>
+            <p>A new study has found out that most women in East africa no longer want to cook. They are delegating the roles to men. Should that really be....[read more..]</p><button class="btn btn-outline-success btn-sm btn-rounded blogtit2">View article</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    
+    <div class="row d.flex justify-content-center align-items-center mt-5">
+        
+        <div class="col-md-4 text-white">
+            <p>23<sup>rd</sup> March 2022</p>
+            <h2>Price of cooking oil in Kenya Shoots to One million.</h2>
+            <p>Yes, you read it right. If you have a litre of cooking oil, you are the new mil....[read more..]</p><button class="btn btn-outline-success btn-sm btn-rounded blogtit1">View article</button>
+        </div>
+        <div class="col-md-8">
+            <img class="img-fluid abtimg" src="./langing-page-images/cookingoil.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/healthydiet.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">What is actually considered as a healthy diet?</h4>
+                <p class="text-white text-center">Eating and living healthy feels so overrated, but is it really...[read more]</p>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/chocolatechip.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">Reasons Why chocolate chip may not be good.</h4>
+                <p class="text-white text-center">If it gets you by surprise, we'll i'm sorry...[read more]</p>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/kitchensetup.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">Your kitchen setup affects your cooking</h4>
+                <p class="text-white text-center">Whether you like it or not, your kitchen setum matters alot and...[read more]</p>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid blog1" id="blog1">
+  <div class="row">
+    <div class="col-md-12">
+      <img class="img-fluid abtimg" src="./langing-page-images/cookingoil.jpg" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col container"> <p class=" text-white text-center mt-2">23<sup>rd</sup> March 2022</p>
+     <a href="#!" class="blogtit1"><h2 class="  text-white text-center mt-2">Price of cooking oil in Kenya Shoots to One million.</h2></a> 
+      <p class=" text-white text-center mt-5 p-2 ">Yes, you read it right. If you have a litre of cooking oil, you are the new millionare in town. Reasons as to why Oil prices in Kenya are shooting very high remains currently unknown. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, in velit maxime porro quas facere at dolor doloribus, accusantium voluptates necessitatibus voluptatum qui rerum, repellendus eveniet officia mollitia numquam officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores, sed adipisci quidem expedita amet totam aliquid alias perferendis maiores tenetur ad vitae odit praesentium voluptatibus quis repellendus neque molestias. </p>
+      <p class=" text-white text-center mt-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae deserunt inventore aspernatur aperiam! Exercitationem nulla vel reprehenderit enim quia iste reiciendis, et odit facilis eius, aspernatur deserunt corrupti temporibus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, illo. Consectetur totam vero suscipit ipsum quidem, nobis hic autem quam earum nemo reprehenderit pariatur accusantium corporis qui impedit voluptates veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores corrupti blanditiis velit nesciunt vitae eius, recusandae nulla explicabo! Nam odio maiores aut accusamus praesentium fugit quidem facilis exercitationem harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur sunt accusamus reprehenderit autem assumenda excepturi beatae. Assumenda nisi eius earum. Alias assumenda possimus veritatis, quam totam animi cum placeat.</p>
+      <p class=" text-white text-center mt-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae deserunt inventore aspernatur aperiam! Exercitationem nulla vel reprehenderit enim quia iste reiciendis, et odit facilis eius, aspernatur deserunt corrupti temporibus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, illo. Consectetur totam vero suscipit ipsum quidem, nobis hic autem quam earum nemo reprehenderit pariatur accusantium corporis qui impedit voluptates veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores corrupti blanditiis velit nesciunt vitae eius, recusandae nulla explicabo! Nam odio maiores aut accusamus praesentium fugit quidem facilis exercitationem harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur sunt accusamus reprehenderit autem assumenda excepturi beatae. Assumenda nisi eius earum. Alias assumenda possimus veritatis, quam totam animi cum placeat.</p>
+    </div>
+  </div>
+
+  <h3 class="text-center text-white">You might also want to read</h3>
+  <div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/healthydiet.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">What is actually considered as a healthy diet?</h4>
+                <p class="text-white text-center">Eating and living healthy feels so overrated, but is it really...[read more]</p>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/chocolatechip.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">Reasons Why chocolate chip may not be good.</h4>
+                <p class="text-white text-center">If it gets you by surprise, we'll i'm sorry...[read more]</p>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/kitchensetup.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">Your kitchen setup affects your cooking</h4>
+                <p class="text-white text-center">Whether you like it or not, your kitchen setum matters alot and...[read more]</p>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid blog2">
+  <div class="row">
+    <div class="col-md-12">
+      <img class="img-fluid abtimg" src="./langing-page-images/Shouldwomen.jpg" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col container"> <p class=" text-white text-center mt-2">24<sup>th</sup> March 2022</p>
+      <a href=""> <h2 class="blogtit2 text-white text-center mt-2">Should Women really cook or should men take the role.</h2></a>
+      <p class=" text-white text-center mt-5 p-2 ">A new study has found out that most women in East africa no longer want to cook. They are delegating the roles to men. Should that really be left to do the house chores or should that responsibility be given to the men. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, in velit maxime porro quas facere at dolor doloribus, accusantium voluptates necessitatibus voluptatum qui rerum, repellendus eveniet officia mollitia numquam officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis asperiores, sed adipisci quidem expedita amet totam aliquid alias perferendis maiores tenetur ad vitae odit praesentium voluptatibus quis repellendus neque molestias. </p>
+      <p class=" text-white text-center mt-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae deserunt inventore aspernatur aperiam! Exercitationem nulla vel reprehenderit enim quia iste reiciendis, et odit facilis eius, aspernatur deserunt corrupti temporibus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, illo. Consectetur totam vero suscipit ipsum quidem, nobis hic autem quam earum nemo reprehenderit pariatur accusantium corporis qui impedit voluptates veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores corrupti blanditiis velit nesciunt vitae eius, recusandae nulla explicabo! Nam odio maiores aut accusamus praesentium fugit quidem facilis exercitationem harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur sunt accusamus reprehenderit autem assumenda excepturi beatae. Assumenda nisi eius earum. Alias assumenda possimus veritatis, quam totam animi cum placeat.</p>
+      <p class=" text-white text-center mt-5 p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae deserunt inventore aspernatur aperiam! Exercitationem nulla vel reprehenderit enim quia iste reiciendis, et odit facilis eius, aspernatur deserunt corrupti temporibus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, illo. Consectetur totam vero suscipit ipsum quidem, nobis hic autem quam earum nemo reprehenderit pariatur accusantium corporis qui impedit voluptates veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt dolores corrupti blanditiis velit nesciunt vitae eius, recusandae nulla explicabo! Nam odio maiores aut accusamus praesentium fugit quidem facilis exercitationem harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consequatur sunt accusamus reprehenderit autem assumenda excepturi beatae. Assumenda nisi eius earum. Alias assumenda possimus veritatis, quam totam animi cum placeat.</p>
+    </div>
+  </div>
+
+  <h3 class="text-center text-white">You might also want to read</h3>
+  <div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/healthydiet.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">What is actually considered as a healthy diet?</h4>
+                <p class="text-white text-center">Eating and living healthy feels so overrated, but is it really...[read more]</p>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/chocolatechip.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">Reasons Why chocolate chip may not be good.</h4>
+                <p class="text-white text-center">If it gets you by surprise, we'll i'm sorry...[read more]</p>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                <img class="img-fluid abtimg" src="./langing-page-images/kitchensetup.jpg" alt="">
+                <h4 class=" text-white text-center mt-2">Your kitchen setup affects your cooking</h4>
+                <p class="text-white text-center">Whether you like it or not, your kitchen setum matters alot and...[read more]</p>
+              </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="text-center text-white mt-5" style="background-color: #07011d;">
+    <!-- Grid container -->
+    <div class="container pt-4 mt-5">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1 "
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="#">Swahili Foods</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <!-- MDB -->
+    
+
+
+
+
+     <!-- MDB -->
+    
+
+     <script
+     type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+     ></script>
+     <!-- <script src="./landing-js/recipe.js">async</script> -->
+     <script src="./landing-js/blog.js">async</script>
+</body>
+</html>

@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./landing-js/jquery.js"></script>
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./landing-css/style.css">
+    <link rel="stylesheet" href="./landing-css/recipe.css">
+    <title>Recipe page</title>
+</head>
+<body class="gradient-custom">
+    
+<!-- Navbar -->
+    <!-- please ensure to copy the above css links for mdbootstrap as well -->
+    <nav class="navbar navbar-expand-lg navbar-light  bg-none navlinkc">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="../index.html">
+              <img
+                src="./langing-page-images/logo.png"
+                height="20"
+                alt="swahili foods Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav m-auto  mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="#">Recipes</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="./blog.html">Blog</a>
+              </li>
+              <!-- <li class="nav-item ">
+                <a class="nav-link navlinkc" href="#">Snacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlinkc" href="#">Order</a>
+              </li> -->
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+      
+          <!-- Right elements -->
+          <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+      
+            
+            <!-- Avatar -->
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                href="#"
+                id="navbarDropdownMenuAvatar"
+                role="button"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                  class="rounded-circle"
+                  height="25"
+                  alt="Black and White Portrait of a Man"
+                  loading="lazy"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuAvatar"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Logged in as Guest</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Sign up feature coming soon" href="#">Sign up</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" data-mdb-toggle="tooltip" data-mdb-placement="left" title="Login feature coming in a later build" href="#">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+
+<!-- Start of Hero Section -->
+ <!-- Background image -->
+ <div
+ class="p-5 bg-image "
+ style="
+   background-image: url('./langing-page-images/recipehero1.jpg');
+   height: 400px;
+   
+ "
+>
+ <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+   <div class="d-flex justify-content-start align-items-start h-100">
+     <div class="row mt-5">
+     <div class="col-md-8 text-white">
+       <h1 class="mb-3 m-md-3" >Swahili Foods Recipes</h1>
+       <p class="mb-3 m-md-3">Celebrate our country’s heritage with classic Swahili recipes that will take you right back to Mom’s kitchen table. </p>
+       
+     </div>
+     
+     </div>
+   </div>
+ </div>
+</div>
+<!-- Background image -->
+
+<div class="container title">
+    <h1 class="fw-bold text-center mt-5 fullarea">Popular Recipes</h1><hr>
+    <h1 class="fw-bold text-center mt-5 recipee">Selected Recipe</h1><hr>
+
+    <div class="row d.flex justify-content-around fullarea">
+        <div class=" justify-content-stretch ">Sort items by:</div>
+        <div class="col-md-2 m-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">All</button></div>
+        <div class="col-md-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Breakfast</button></div>
+        <div class="col-md-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Lunch</button></div>
+        <div class="col-md-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Dinner</button></div>
+        <div class="col-md-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Fruity</button></div>
+        <div class="col-md-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Snacks</button></div>
+        <div class="col-md-1 out"><button type="button" class="btn btn-outline-success btn-rounded" data-mdb-ripple-color="dark">Light</button></div>
+    </div>
+</div>
+
+
+<div class="container fullarea">
+    <div class="container">
+      <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+    <!-- Image with no mask -->
+    <div class="bg-image rounded-6 masking bg1">
+      <img
+        src="./langing-page-images/sonas.jpg"
+        class="w-100"
+        alt="Alternative text"
+      />
+      <!-- Mask -->
+      <div class="mask"
+      style="
+        background: linear-gradient(
+          to bottom,
+          hsla(0, 0%, 0%, 0),
+          hsla(263, 80%, 20%, 0.5)
+        );
+      ">
+        <div
+          class="
+            bottom-0
+            d-flex
+            align-items-end
+            h-100
+            text-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+            <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+            <button type="button" class="btn btn-warning btn-rounded btn1 ">View Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <!-- Image with black mask -->
+    <div class="bg-image rounded-6 masking bg2">
+      <img
+        src="./langing-page-images/pizzaa.jpg"
+        class="w-100"
+        alt="Alternative text"
+      />
+      <!-- Mask -->
+      <div
+      class="mask"
+      style="
+        background: linear-gradient(
+          to bottom,
+          hsla(0, 0%, 0%, 0),
+          hsla(263, 80%, 20%, 0.5)
+        );
+      "
+      >
+        <div
+          class="
+            bottom-0
+            d-flex
+            align-items-end
+            h-100
+            text-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+            <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+            <button type="button" class="btn btn-warning btn-rounded btn2 ">View Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <!-- Image with violet mask -->
+    <div class="bg-image rounded-6 masking bg3">
+      <img
+        src="./langing-page-images/breakfast.jpg"
+        class="w-100"
+        alt="Alternative text"
+      />
+      <!-- Mask -->
+      <div
+      class="mask"
+      style="
+        background: linear-gradient(
+          to bottom,
+          hsla(0, 0%, 0%, 0),
+          hsla(263, 80%, 20%, 0.5)
+        );
+      "
+      >
+        <div
+          class="
+            bottom-0
+            d-flex
+            align-items-end
+            h-100
+            text-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+            <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+            <button type="button" class="btn btn-warning btn-rounded btn3 ">View Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Grid row-->
+  <div class="row mt-5">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <!-- Image with no mask -->
+    <div class="bg-image rounded-6 masking bg4">
+      <img
+        src="./langing-page-images/chapondengu.jpg"
+        class="w-100"
+        alt="Alternative text"
+      />
+      <!-- Mask -->
+      <div class="mask"
+      style="
+        background: linear-gradient(
+          to bottom,
+          hsla(0, 0%, 0%, 0),
+          hsla(263, 80%, 20%, 0.5)
+        );
+      ">
+        <div
+          class="
+            bottom-0
+            d-flex
+            align-items-end
+            h-100
+            text-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h4 class="fw-bold text-white ">Chapati Minji with dumplings</h4>
+            <p class=" text-white  "> Ingredients: Wheat flour...</p>
+            <button type="button" class="btn btn-warning btn-rounded btn4 ">View Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <!-- Image with black mask -->
+    <div class="bg-image rounded-6 masking bg5">
+      <img
+        src="./langing-page-images/ugali-choma.jpg"
+        class="w-100"
+        alt="Alternative text"
+      />
+      <!-- Mask -->
+      <div
+      class="mask"
+      style="
+        background: linear-gradient(
+          to bottom,
+          hsla(0, 0%, 0%, 0),
+          hsla(263, 80%, 20%, 0.5)
+        );
+      "
+      >
+        <div
+          class="
+            bottom-0
+            d-flex
+            align-items-end
+            h-100
+            text-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h4 class="fw-bold text-white ">Ugali Mlima na Nyama choma</h4>
+            <p class=" text-white  "> Ingredients: Meat, onions, masala...</p>
+            <button type="button" class="btn btn-warning btn-rounded btn5 ">View Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <!-- Image with violet mask -->
+    <div class="bg-image rounded-6 masking bg6">
+      <img
+        src="./langing-page-images/pancakes.jpg"
+        class="w-100 img-fluid"
+        alt="Alternative text"
+      />
+      <!-- Mask -->
+      <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+      >
+        <div
+          class="
+            bottom-0
+            d-flex
+            align-items-end
+            h-100
+            text-center
+            justify-content-center
+          "
+        >
+          <div>
+            <h4 class="fw-bold text-white ">Pineapple juice, grapes and pancakes</h4>
+            <p class=" text-white  "> Ingredients: Grapes, milk, flour...</p>
+            <button type="button" class="btn btn-warning btn-rounded btn6 ">View Recipe</button>
+          </div>
+          <div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+        <!--Grid row-->
+  
+  
+  
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+              <!-- Image with no mask -->
+              <div class="bg-image rounded-6 masking bg7">
+                <img
+                  src="./langing-page-images/chapochai.jpg"
+                  class="w-100"
+                  alt="Alternative text"
+                />
+                <!-- Mask -->
+                <div class="mask"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    hsla(0, 0%, 0%, 0),
+                    hsla(263, 80%, 20%, 0.5)
+                  );
+                ">
+                  <div
+                    class="
+                      bottom-0
+                      d-flex
+                      align-items-end
+                      h-100
+                      text-center
+                      justify-content-center
+                    "
+                  >
+                    <div>
+                      <h4 class="fw-bold text-white ">Chapati Chai moto</h4>
+                      <p class=" text-white  "> Ingredients: Tea leaves, flour,...</p>
+                      <button type="button" class="btn btn-warning btn-rounded btn7 ">View Recipe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- Image with black mask -->
+              <div class="bg-image rounded-6 masking bg8">
+                <img
+                  src="./langing-page-images/pizzaa.jpg"
+                  class="w-100"
+                  alt="Alternative text"
+                />
+                <!-- Mask -->
+                <div
+                class="mask"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    hsla(0, 0%, 0%, 0),
+                    hsla(263, 80%, 20%, 0.5)
+                  );
+                "
+                >
+                  <div
+                    class="
+                      bottom-0
+                      d-flex
+                      align-items-end
+                      h-100
+                      text-center
+                      justify-content-center
+                    "
+                  >
+                    <div>
+                      <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+                      <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+                      <button type="button" class="btn btn-warning btn-rounded btn8 ">View Recipe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- Image with violet mask -->
+              <div class="bg-image rounded-6 masking bg9">
+                <img
+                  src="./langing-page-images/breakfast.jpg"
+                  class="w-100"
+                  alt="Alternative text"
+                />
+                <!-- Mask -->
+                <div
+                class="mask"
+                style="
+                  background: linear-gradient(
+                    to bottom,
+                    hsla(0, 0%, 0%, 0),
+                    hsla(263, 80%, 20%, 0.5)
+                  );
+                "
+                >
+                  <div
+                    class="
+                      bottom-0
+                      d-flex
+                      align-items-end
+                      h-100
+                      text-center
+                      justify-content-center
+                    "
+                  >
+                    <div>
+                      <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+                      <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+                      <button type="button" class="btn btn-warning btn-rounded btn9 ">View Recipe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+                  <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg10">
+        <img
+          src="./langing-page-images/sonas.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+              <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn10 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg11">
+        <img
+          src="./langing-page-images/pizzaa.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+              <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn11 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg12">
+        <img
+          src="./langing-page-images/breakfast.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+              <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn12 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+          <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg13">
+        <img
+          src="./langing-page-images/sonas.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+              <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn13 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg14">
+        <img
+          src="./langing-page-images/pizzaa.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+              <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn14 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg15">
+        <img
+          src="./langing-page-images/breakfast.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+              <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn15 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+          <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg16">
+        <img
+          src="./langing-page-images/sonas.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+              <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn16 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg17">
+        <img
+          src="./langing-page-images/pizzaa.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+              <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn17 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg18">
+        <img
+          src="./langing-page-images/breakfast.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+              <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn18 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+          <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg19">
+        <img
+          src="./langing-page-images/sonas.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+              <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn19 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg20">
+        <img
+          src="./langing-page-images/pizzaa.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+              <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn20 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg21">
+        <img
+          src="./langing-page-images/breakfast.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+              <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn21 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+          <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg22">
+        <img
+          src="./langing-page-images/sonas.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+              <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn22 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg23">
+        <img
+          src="./langing-page-images/pizzaa.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+              <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn23 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg24">
+        <img
+          src="./langing-page-images/breakfast.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+              <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn24 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+          <!--Grid row-->
+  
+  
+  
+  <div class="row mt-5">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 ">
+      <!-- Image with no mask -->
+      <div class="bg-image rounded-6 masking bg25">
+        <img
+          src="./langing-page-images/sonas.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        ">
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Orange juice with fried eggs</h4>
+              <p class=" text-white  "> Ingredients: Onions, peeled oranges...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn25 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with black mask -->
+      <div class="bg-image rounded-6 masking bg26">
+        <img
+          src="./langing-page-images/pizzaa.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">African pizza with Dhania</h4>
+              <p class=" text-white  "> Ingredients: flour,breadcrumbs, tomato...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn26 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <!-- Image with violet mask -->
+      <div class="bg-image rounded-6 masking bg27">
+        <img
+          src="./langing-page-images/breakfast.jpg"
+          class="w-100"
+          alt="Alternative text"
+        />
+        <!-- Mask -->
+        <div
+        class="mask"
+        style="
+          background: linear-gradient(
+            to bottom,
+            hsla(0, 0%, 0%, 0),
+            hsla(263, 80%, 20%, 0.5)
+          );
+        "
+        >
+          <div
+            class="
+              bottom-0
+              d-flex
+              align-items-end
+              h-100
+              text-center
+              justify-content-center
+            "
+          >
+            <div>
+              <h4 class="fw-bold text-white ">Natural coast fruit salad</h4>
+              <p class=" text-white  "> Ingredients: Banana, mangoes, pinaeapple...</p>
+              <button type="button" class="btn btn-warning btn-rounded btn27 ">View Recipe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </div>
+  </div>
+  
+  </div>
+  
+  
+
+
+<div class="container recipe1">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+<div class="container recipe2">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/pizzaa.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">African Pizza with Dhania Recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 40 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 50 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 4-6 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+<div class="container recipe3">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/breakfast.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Natural Coast Fruit Salad Recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+<div class="container recipe4">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/chapondengu.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Chapati Minji with Dumplings</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container recipe5">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/ugali-choma.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Ugali Mlima and Nyama Choma</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="container recipe6">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/pancakes.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Mombasa Raha Pancakes and Pineapple Juice Recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+<div class="container recipe7">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/chapochai.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Chapati Chai Moto Recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+<div class="container recipe8">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+<div class="container recipe9">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="container recipe10">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container recipe11">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="container recipe12">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+<div class="container recipe13">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+<div class="container recipe14">
+    <div class="row">
+        <div class="h-50 col-md-6">
+            <img class="img-fluid img1 mt-5" src="./langing-page-images/sonas.jpg" alt="">
+        </div>
+        <div class="h-50 col-md-6">
+            <div class=" d-flex flex-row justify-content-center align-items-end mt-5">
+                <h2 class="fw-bold text-center text-white mt-5">Fried Eggs, Broccoli & Orange Juice recipe</h2>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-start">
+                <h3 class="badge  "><i class="fa-solid fa-clock"></i><br><br> 10 mins<br><br> Prep Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-clock"></i><br><br> 25 mins<br><br> Cook Time</h3>
+                <h3 class="badge "><i class="fa-solid fa-utensils"></i><br><br> Serves<br><br> 2-4 People</h3>
+              </div>
+              <div class="row justify-content-between align-items-start" >
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Preparation steps</h2>
+                <div class="badge ">
+                    <ul class="text-start">
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Chop two large Onions</li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Pre-heat oil in a pan</li>
+                        <li class="m-1">pour in onions </li>
+                        <li class="m-1">Add paprika, masala and soy sauce</li>
+                        <li class="m-1">Pour in the beaten eggs </li>
+                        <li class="m-1">Add whole brocolli</li>
+                        <li class="m-1">Beat two eggs in a bowl</li>
+                        <li class="m-1">Mix till Golden Brown</li>
+                        <li class="m-1">Serve while hot</li>
+                        <li class="m-1">Serve with Orange Juice for maximum flavour</li>
+                    </ul>
+                </div>
+                
+              </div>
+              <div class=" col-md-3 d-flex flex-column justify-content-start align-items-start">
+                <h2 class="badge  mt-5 ">Ingredients:</h2>
+                <div class="badge ">
+                    <ol class="text-start">
+                        <li class="m-1">Two eggs</li>
+                        <li class="m-1">Three tomatoes </li>
+                        <li class="m-1">Cut 3 large tomatoes</li>
+                        <li class="m-1">Brocolli</li>
+                        <li class="m-1">Two Onions </li>
+                        <li class="m-1">1 cup cooking oil </li>
+                        <li class="m-1">Masala</li>
+                        <li class="m-1">I cup Orange Juice</li>
+                      
+                    </ol>
+                </div>
+                
+              </div>
+              <div class=" d-flex flex-row justify-content-between align-items-center mt-5">
+                <h3 class="badge bg-primary  ">Add to my recipe Book  <i class="fa-solid fa-bookmark"></i></h3>
+                <h3 class="badge bg-primary">Download  <i class="fa-solid fa-download"></i></h3>
+                <h3 class="badge bg-primary">Share  <i class="fa-solid fa-share-nodes"></i></h3>
+              </div>
+              <button type="button" class="btn btn-outline-primary back mt-5">Back to Recipes</button>
+             </div>
+        </div>
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+<footer class="text-center text-white mt-5" style="background-color: #07011d;">
+    <!-- Grid container -->
+    <div class="container pt-4 mt-5">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1 "
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-white m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="#">Swahili Foods</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+    <!-- MDB -->
+    
+
+
+
+
+     <!-- MDB -->
+    
+
+     <script
+     type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+     ></script>
+     <script src="./landing-js/recipe.js">async</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.gradient-custom {
+    background: #4e556e;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to bottom, rgba(78, 85, 110, 1), rgba(9, 10, 52, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgba(78, 85, 110, 1), rgba(9, 10, 52, 1))
+  }
+/* navigation bar styling starts here  */
+.nav-link {
+    font-weight: 700;
+    color: black ;
+}
+.nav-link:hover{
+    color: #F87300 !important;
+}
+.navlinkc {
+    color: #ffffff !important;
+    
+}
+.navlinkc:hover {
+    color: rgb(248, 141, 0) !important;
+}
+
+.hero h1, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.9rem;
+    font-weight: bold;
+}
+.herobtn {
+    background:  #F87300;
+    border:#F87300;
+}
+.herobtn:hover{
+    background:rgb(248, 0, 215)
+}
+.subtext h6{
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+}
+.masking {
+    height: 50vh;
+    
+}
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8,.btn9, .btn10, .btn11, .btn12, .btn13, .btn14, .btn15, .btn16, .btn17, .btn18, .btn19, .btn20, .btn21, .btn22, .btn23, .btn24, .btn25, .btn26, .btn27, .btn28 {
+    display: none;
+}
+.bg1, .bg2, .bg3, .bg4, .bg5, .bg6 {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.abtimg {
+    border-radius: 20px;
+}
+.abttxt h3 {
+    font-weight: 400;
+    color: black;
+}
+.recipe1, .recipe2, .recipe3, .recipe4, .recipe5, .recipe6, .recipe7, .recipe8, .recipe9, .recipe10, .recipe11, .recipe12, .recipe13, .recipe14, .recipee {
+    display: none;
+}
+.title {
+    color: white;
+}
+.out button:hover {
+    background: #F87300;
+    font-weight: 700;
+    color: white;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+@media only screen and (min-width: 1020px){
+    .masking {
+        height: 50vh;
+        width: 20vw;
+    }
+    .about {
+        height: 170vh;
+        width: 100%;
+    }
+    .img1 {
+        height: auto;
+        width: 34vw;
+        border-radius: 30px;
+    }
+
+}

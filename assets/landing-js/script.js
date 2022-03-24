@@ -1,3 +1,7 @@
+$(window).on('load',function(){
+    $('#staticBackdrop').modal('show');
+});
+
 $(document).ready(function(){
 
     var header = $(".navbar");
@@ -21,17 +25,16 @@ $(document).ready(function(){
             link.removeClass("navlinkc").addClass('');
         }
     });
+
+    
 });
+// Copy all the code written above for the navigation bar
 // Navigation bar script ends here
 
 
 // view recipe button hide and show effect
 $(".bg1").mouseover(function(){
     $(".btn1").show();
-    $("#btn1").click(function() {
-        window.location.href = './pages/mainRecipe.html#breakfast'; //Adds click function
-    });
-    
 });
 $(".bg1").mouseleave(function(){
     $(".btn1").hide();
@@ -39,10 +42,6 @@ $(".bg1").mouseleave(function(){
 
 $(".bg2").mouseover(function(){
     $(".btn2").show();
-    $("#btn2").click(function() {
-        window.location.href = './pages/mainRecipe.html#lunch';
-    });
-    
 });
 $(".bg2").mouseleave(function(){
     $(".btn2").hide();
@@ -50,9 +49,6 @@ $(".bg2").mouseleave(function(){
 
 $(".bg3").mouseover(function(){
     $(".btn3").show();
-    $("#btn3").click(function() {
-        window.location.href = './pages/mainRecipe.html#lunch';
-    });
 });
 $(".bg3").mouseleave(function(){
     $(".btn3").hide();
@@ -60,10 +56,6 @@ $(".bg3").mouseleave(function(){
 
 $(".bg4").mouseover(function(){
     $(".btn4").show();
-    $("#btn4").click(function() {
-       
-        window.location.href = './pages/mainRecipe.html#snacks';
-    });
 });
 $(".bg4").mouseleave(function(){
     $(".btn4").hide();
@@ -71,9 +63,6 @@ $(".bg4").mouseleave(function(){
 
 $(".bg5").mouseover(function(){
     $(".btn5").show();
-    $("#btn5").click(function() {
-        window.location.href = './pages/mainRecipe.html#dinner';
-    });
 });
 $(".bg5").mouseleave(function(){
     $(".btn5").hide();
@@ -84,44 +73,4 @@ $(".bg6").mouseover(function(){
 });
 $(".bg6").mouseleave(function(){
     $(".btn6").hide();
-});
-
-//code for news letter pop up
-$(document).ready(function () {
-  var delay = 300; // milliseconds
-  var cookie_expire = 0; // days
-
-  var cookie = localStorage.getItem("list-builder");
-  if (cookie == undefined || cookie == null) {
-    cookie = 0;
-  }
-
-  if ((new Date().getTime() - cookie) / (1000 * 60 * 60 * 24) > cookie_expire) {
-    $("#list-builder")
-      .delay(delay)
-      .fadeIn("fast", () => {
-        $("#popup-box").fadeIn("fast", () => {});
-      });
-
-    $("button[name=subscribe]").click(() => {
-      $.ajax({
-        type: "POST",
-        url: $("#popup-form").attr("action"),
-        data: $("#popup-form").serialize(),
-        success: (data) => {
-          $("#popup-box-content").html(
-            "<p style='text-align: center'>Thank you for subscribing to Swahili Dishes newsletter!</p>"
-          );
-        },
-      });
-    });
-
-    $("#popup-close").click(() => {
-      $("#list-builder, #popup-box").hide();
-      localStorage.setItem("list-builder", new Date().getTime());
-    });
-  }
-});
-$.post($("#popup-form").attr("action"), { name: $("input[name=name]").val(), email: $("input[name=email]").val(), list: $("input[name=list]").val() }, (result) => {
-    $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to The Polyglot Developer newsletter!</p>");
 });
