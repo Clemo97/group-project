@@ -2,7 +2,13 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-
+.rLink{
+  color: #FEA150;
+}
+a:hover{
+  text-decoration: none;
+  color: #333333;
+}
 .main 
 {
   background: #FFFFFF;
