@@ -6,17 +6,47 @@ Web application for equisite Swahili recipes.
 
 #### **Concept**
 ****
-
-#### **Description**
-****
 *Swahili Foods, a Recipe website which brings you a taste from the coast. From Swahili dishes, such as mahambri and chapati, to non traditional dishes, like chow mein, and jerk chicken. You’ll always find a plate that can come from our table to yours! From international foods to dessert and drinks, you’ll always find something easy and fun to cook!*
 </br>
 
+#### **Description**
+****
+*In this project we embarked on creating a web application specifically designed for the Swahili cuisine. The application contains unique and easy to implement recipes, and what's more? You can subscribe to the latest news/recipes. It is easy to use and has a great UI*</br>
+*Application Unique Selling points*
+
 **Fixed Transparent Navigation Bar:** </br>
-![Alt text](./images/screenshots/NavBarTransparent.png?raw=true "Optional Title")
+![Alt text](./readMeFiles/transparentNavbar.png?raw=true "Optional Title")
 
 **Navigation Bar with a Solid Background color on Scroll:** </br>
-![Alt text](./images/screenshots/navbarOnScroll.png?raw=true "Optional Title")
+![Alt text](./readMeFiles/SnavSolid.png?raw=true "Optional Title")
+
+**Main Section:** </br>
+![Alt text](./readMeFiles/main.png?raw=true "Optional Title")
+
+
+**Recipe Cards Display:** </br>
+![Alt text](./readMeFiles/recipecards.png?raw=true "Optional Title")
+
+**Toggled Recipe Section:** </br>
+![Alt text](./readMeFiles/recipeCardToggle.png?raw=true "Optional Title")
+
+**Blog Section:** </br>
+![Alt text](./readMeFiles/mainBlog.png?raw=true "Optional Title")
+
+**Blog Cards Display:** </br>
+![Alt text](./readMeFiles/blogCard.png?raw=true "Optional Title")
+
+**Subscription Form:** </br>
+![Alt text](./readMeFiles/subsform.png?raw=true "Optional Title")
+
+**Subscription Form Pop-Up:** </br>
+![Alt text](./readMeFiles/subsP.png?raw=true "Optional Title")
+
+**Contact Secction:** </br>
+![Alt text](./readMeFiles/contact.png?raw=true "Optional Title")
+
+**Site Footer:** </br>
+![Alt text](./readMeFiles/footer.png?raw=true "Optional Title")
 
 #### **Demo App**
 ****
