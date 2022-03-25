@@ -1,4 +1,4 @@
-# **Swahili Foods**
+ **Swahili Foods**
 ****
 A web application for equisite Swahili recipes.
 
@@ -51,8 +51,7 @@ A web application for equisite Swahili recipes.
 #### **Demo App**
 ****
 The final product of this group's project has been deployed to Git Hub pages and is available through the link below. Do check it out!
-
-## https:
+https:
 
 #### **Technologies**
 ****
