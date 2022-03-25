@@ -4,12 +4,12 @@ A web application for equisite Swahili recipes.
 
 ![Alt text](./readMeFiles/main.png?raw=true "Optional Title")
 
-#### **Concept**
+## **Concept**
 ****
 *Swahili Foods, a Recipe website which brings you a taste from the coast. From Swahili dishes, such as mahambri and chapati, to non traditional dishes, like chow mein, and jerk chicken. You’ll always find a plate that can come from our table to yours! From international foods to dessert and drinks, you’ll always find something easy and fun to cook!*
 </br>
 
-#### **Description**
+## **Description**
 ****
 *In this project we embarked on creating a web application specifically designed for the Swahili cuisine. The application contains unique and easy to implement recipes, and what's more? You can subscribe to the latest news/recipes. It is easy to use and has a great UI*</br>
 *Application Unique Selling points*
@@ -118,9 +118,9 @@ Incase of any question or contributions, you can contact any of us through:</br>
     [Clement Lumumba](https://github.com/Clemo97) *lumumbaclement@gmail.com* </br>
     [Gamaliel Sirengo](https://github.com/sirgama) *sirengogamaliel@gmail.com* </br>
     [Atieno Obwanda](https://github.com/AtienoObwanda) *atienoobwanda@gmail.com* </br>
-    [Zelipha Wambui](https://github.com/Zelipha) *jepngetichcolleta@gmail.com* </br>
+    [Zelipha Wambui](https://github.com/Zelipha) *zeliphawambui756@gmail.com* </br>
     [Gillian Nyangaga](https://github.com/95gillian)  *gillian.nyangaga@moringaschool.com* </br>
-    [Jepngetich Lagat](https://github.com/colletemine) *zeliphawambui756@gmail.com* </br>
+    [Jepngetich Lagat](https://github.com/colletemine) *jepngetichcolleta@gmail.com* </br>
 
 #### **License**
 ****
