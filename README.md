@@ -69,7 +69,7 @@ This project was completed as a collaboration between: </br>
 [Gamaliel Sirengo](https://github.com/sirgama) </br>
 [Atieno Obwanda](https://github.com/AtienoObwanda) </br>
 [Zelipha Wambui](https://github.com/Zelipha) </br>
-[Gillian](https://github.com/95gillian) </br>
+[Gillian Nyangaga](https://github.com/95gillian) </br>
 [Jepngetich Lagat](https://github.com/colletemine) </br>
 #### **Installation**
 ****
@@ -87,7 +87,7 @@ git clone https://github.com/Clemo97/group-project.git
 ```js
     code .
 ```
-*VS Code* </br>
+*Atom* </br>
 ```js
     atom .
 ```
@@ -118,7 +118,7 @@ Incase of any question or contributions, you can contact any of us through:</br>
     [Gamaliel Sirengo](https://github.com/sirgama) *sirengogamaliel@gmail.com* </br>
     [Atieno Obwanda](https://github.com/AtienoObwanda) *atienoobwanda@gmail.com* </br>
     [Zelipha Wambui](https://github.com/Zelipha) *jepngetichcolleta@gmail.com* </br>
-    [Gillian](https://github.com/95gillian)  *gillian.nyangaga@moringaschool.com* </br>
+    [Gillian Nyangaga](https://github.com/95gillian)  *gillian.nyangaga@moringaschool.com* </br>
     [Jepngetich Lagat](https://github.com/colletemine) *zeliphawambui756@gmail.com* </br>
 
 #### **License**
