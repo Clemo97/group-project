@@ -51,7 +51,7 @@ A web application for equisite Swahili recipes.
 #### **Demo App**
 ****
 The final product of this group's project has been deployed to Git Hub pages and is available through the link below. Do check it out!
-https:
+https://clemo97.github.io/group-project/
 
 #### **Technologies**
 ****
@@ -96,7 +96,7 @@ git clone https://github.com/Clemo97/group-project.git
 #### **How to Use the Project**
 ****
 *To get started, you can access the project through our live link:* 
-https:
+https://clemo97.github.io/group-project/
 
 *Alternatively, you can follow the installation guide and run it from your computer* </br>
 
