@@ -82,20 +82,22 @@ git clone https://github.com/Clemo97/group-project.git
     cd group-project
 ```
 *Depending on your code editor,run this on your terminal* </br>
-*VS Code*</br>
+*VS Code*
 ```js
     code .
 ```
-*Atom* </br>
+*Atom* 
 ```js
     atom .
 ```
 *Next, download the latest dependencies for jQuery, and Bootstrap consequently:* </br>
 *That's it* **Happy hacking!!!**
+
 #### **How to Use the Project**
+****
 *To get started, you can access the project through our live link:* 
-## https:
- </br>
+https:
+
 *Alternatively, you can follow the installation guide and run it from your computer* </br>
 
 #### **Known bugs**
