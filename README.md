@@ -1,6 +1,6 @@
 # **Swahili Foods**
 ****
-Web application for equisite Swahili recipes.
+A web application for equisite Swahili recipes.
 
 ![Alt text](./readMeFiles/main.png?raw=true "Optional Title")
 
@@ -51,47 +51,68 @@ Web application for equisite Swahili recipes.
 #### **Demo App**
 ****
 The final product of this group's project has been deployed to Git Hub pages and is available through the link below. Do check it out!
-## add demo link
+
+## https:
 
 #### **Technologies**
 ****
 The technologies used to complete this project were:
-1.
-2.
-3.
-4.
-5.
-
+1. HTML  -Structuring web pages.
+2. BOOTSTRAP -Developing responsive web pages.
+3. JS- To make web pages interactive.
+4. CSS- Defining the styles for web pages
+5. JQUERY - To add animations and interactive elements.
 #### **Contributors**
 ****
-This project was completed as a collaboration between:
-[Clement Lumumba](https://github.com/Clemo97)
-[Gamaliel Sirengo](https://github.com/sirgama)
-[Atieno Obwanda](https://github.com/AtienoObwanda)
-[Zelipha Wambui](https://github.com/Zelipha)
-[Gillian](https://github.com/95gillian)
-[Jepngetich Lagat](https://github.com/colletemine)
-
-
-
+This project was completed as a collaboration between: </br>
+[Clement Lumumba](https://github.com/Clemo97) </br>
+[Gamaliel Sirengo](https://github.com/sirgama) </br>
+[Atieno Obwanda](https://github.com/AtienoObwanda) </br>
+[Zelipha Wambui](https://github.com/Zelipha) </br>
+[Gillian](https://github.com/95gillian) </br>
+[Jepngetich Lagat](https://github.com/colletemine) </br>
 #### **Installation**
 ****
-If you would like to install and run this project locally, first clone this repository as follows:
-
+**If you would like to install and run this project locally, first clone this repository as follows:**
+*From your terminal:* </br>
+```js
+git clone https://github.com/Clemo97/group-project.git
+```
+*Once the program has been cloned, run this on your terminal* </br>
+```js
+    cd group-project
+```
+*Depending on your code editor,run this on your terminal* </br>
+*VS Code*</br>
+```js
+    code .
+```
+*VS Code* </br>
+```js
+    atom .
+```
+*Next, download the latest dependencies for jQuery, and Bootstrap consequently:* </br>
+*That's it* **Happy hacking!!!**
+#### **How to Use the Project**
+*To get started, you can access the project through our live link:* 
+## https:
+ </br>
+*Alternatively, you can follow the installation guide and run it from your computer* </br>
 
 #### **Known bugs**
 ****
-There are no known bugs at the moment.
-
-
+There are no known bugs at the moment.</br>
 ### **Future Work**
 ****
 Future work on this project includes but is not limited to the following:
-
+ 1. Add a fully functional order section.
+ 2. Implementing backend logic and database.
+ 3. Add a chef area.
+ 4. Add Content Management System to make entry of recipes quick.
+ 5. Verified chef’s being able to post recipes.
 
 #### **Contact Information**
 ****
-
 Incase of any question or contributions, you can contact any of us through:</br>
     [Clement Lumumba](https://github.com/Clemo97) *lumumbaclement@gmail.com* </br>
     [Gamaliel Sirengo](https://github.com/sirgama) *sirengogamaliel@gmail.com* </br>
@@ -100,11 +121,8 @@ Incase of any question or contributions, you can contact any of us through:</br>
     [Gillian](https://github.com/95gillian)  *gillian.nyangaga@moringaschool.com* </br>
     [Jepngetich Lagat](https://github.com/colletemine) *zeliphawambui756@gmail.com* </br>
 
-
-
 #### **License**
 ****
 MIT License
 Copyright (c) 2022 Swahili Foods
 
-**Happy hacking!!!**
