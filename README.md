@@ -35,12 +35,12 @@ The technologies used to complete this project were:
 #### **Contributors**
 ****
 This project was completed as a collaboration between:
-[]()
-[]()
+[Clement Lumumba](https://github.com/Clemo97)
+[Gamaliel Sirengo](https://github.com/sirgama)
 [Atieno Obwanda](https://github.com/AtienoObwanda)
-[]()
-[]()
-[]()
+[Zelipha Wambui](https://github.com/Zelipha)
+[Gillian](https://github.com/95gillian)
+[Jepngetich Lagat](https://github.com/colletemine)
 
 
 
@@ -63,12 +63,12 @@ Future work on this project includes but is not limited to the following:
 ****
 
 Incase of any question or contributions, you can contact any of us through:</br>
-1. [Clement Lumumba](https://github.com/) *lumumbaclement@gmail.com* </br>
-2. [Gamaliel Sirengo ](https://github.com/) *sirengogamaliel@gmail.com* </br>
-3. [Atieno Obwanda](https://github.com/AtienoObwanda) *atienoobwanda@gmail.com* </br>
-4. [Jepngetich Lagat](https://github.com/) *jepngetichcolleta@gmail.com* </br>
-5. [Gillian Nyangaga](https://github.com/) *gillian.nyangaga@moringaschool.com* </br>
-6. [Zelipha Wambui](https://github.com/) *zeliphawambui756@gmail.com* </br>
+    [Clement Lumumba](https://github.com/Clemo97) *lumumbaclement@gmail.com* </br>
+    [Gamaliel Sirengo](https://github.com/sirgama) *sirengogamaliel@gmail.com* </br>
+    [Atieno Obwanda](https://github.com/AtienoObwanda) *atienoobwanda@gmail.com* </br>
+    [Zelipha Wambui](https://github.com/Zelipha) *jepngetichcolleta@gmail.com* </br>
+    [Gillian](https://github.com/95gillian)  *gillian.nyangaga@moringaschool.com* </br>
+    [Jepngetich Lagat](https://github.com/colletemine) *zeliphawambui756@gmail.com* </br>
 
 
 
